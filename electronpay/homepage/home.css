@@ -36,11 +36,9 @@ a {
 }
 
 .nav {
-    /* position: fixed; */
     width: 100%;
     z-index: 5;
     border: 1px solid;
-    /* padding: 10px 50px; */
 }
 
 .nav-header {
@@ -66,15 +64,15 @@ a {
 }
 
 .nav-toggler:hover {
-    /* transform: skew(15deg, 15deg); */
-    /* transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1000ms; */
     transform: rotate(450deg);
 }
 
 .menu-nav {
-    padding: 20px 50px;
+    padding: 0 50px;
     font-weight: 600;
-    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    transition: var(--btn-sole-transition);
 }
 
 .menu-nav__list {
@@ -85,16 +83,9 @@ a {
 }
 
 .menu-nav__link {
-    /* border: 1px solid; */
     display: block;
     padding: 20px 0;
 }
-
-/* .menu-btn {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-} */
 
 .menu-btn__sign {
     border: 1px solid var(--red-bg-color);
@@ -123,7 +114,6 @@ header {
     text-align: center;
     margin-bottom: 30px;
     padding: 5px;
-    /* box-shadow: 0 2px 0 0 white; */
     border-bottom: 1px solid #eee;
 }
 
@@ -131,8 +121,6 @@ header {
     animation-name: rotate;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    /* animation-timing-function: linear; */
-
 }
 
 @keyframes rotate {
@@ -144,7 +132,6 @@ header {
 .catchphrases {
     max-width: 900px;
     padding: 50px;
-    /* border: 1px solid; */
     margin: 0 auto;
     color: white;
 }
@@ -168,7 +155,6 @@ header {
     background-color: rgba(255, 196, 0, 0.659);
     position: relative;
     z-index: 0;
-    /* color: white; */
 }
 
 .catchphrase-btn::after {
@@ -185,6 +171,87 @@ header {
 
 .catchphrase-btn:hover::after {
     width: 100%;
+}
+
+#services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(238, 238, 238, 0.535);
+}
+
+#plans-pricing {
+    padding: 50px 0;
+}
+
+.plans-and-pricing,
+.how-it-works {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px 100px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.plan-template {
+    border: 1px solid;
+    height: max-content;
+    box-shadow: 0 0 5px black;
+    position: relative;
+}
+
+ .plan-template:nth-child(2)::after,
+ .plan-template:nth-child(3)::after 
+ {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.46);
+}
+
+.plan-template__pricetag {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.plan-template__pricetag h5 {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid;
+    background-color: #333;
+    color: white;
+}
+
+.plan-template__pricetag p {
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.plan-template .functionalities {
+    padding: 10px 50px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+    .plans-and-pricing,
+    .how-it-works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .plans-and-pricing,
+    .how-it-works {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .register-account {
@@ -227,23 +294,7 @@ header {
     color: var(--btn-big-bg-color);
 }
 
-.plans {
-    display: grid;
-    grid-gap: 20px;
-    padding: 20px 50px;
-}
-
-.plan-template {
-    border: 1px solid;
-    height: 250px;
-}
-
-.plan-template h5 {
-    padding: 10px;
-    border: 1px solid;
-    background-color: #bbb;
-}
-
-.plan-template .functionalities {
-    padding: 10px 30px;
+.footer {
+    text-align: center;
+    padding: 20px;
 }
