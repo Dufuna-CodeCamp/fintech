@@ -49,6 +49,7 @@ function formValidation(event) {
 
 
   validation(
+    
     firstName,
     nameRegex,
     "First Name is required",
