@@ -15,6 +15,7 @@ year.innerHTML = new Date().getFullYear();
 navToggleBtn.addEventListener("click", function(){
     const listContainerHeight = listContainer.getBoundingClientRect().height;
     const navListHeight = navList.getBoundingClientRect().height +70;
+    console.log(listContainerHeight);
     if(listContainerHeight <= 40){
         listContainer.style.height = `${navListHeight}px`;
     } else {
@@ -55,5 +56,5 @@ function setCheckPassAction(inputField, message){
 formField.addEventListener("submit", e => {
   e.preventDefault();
   validateField(emailField, emailRegEx, "* Email cannot be blank", "* Email is invalid");
-  validateField(passwordField, passwordRegEx, "* Password cannot be blank", "* Password cannnot contain blah blah blah");
+  validateField(passwordField, passwordRegEx, "* Password cannot be blank", "* Password contains unacceptable characters");
 })
