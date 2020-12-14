@@ -3,25 +3,21 @@
   --btn-sole-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1000ms;
   --btn-big-bg-color: rgb(255, 196, 0);
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
-
 a {
   text-decoration: none;
   color: black;
   font-weight: 600;
 }
-
 .support-section {
   padding: 10px 50px;
   background-color: black;
@@ -29,18 +25,15 @@ a {
   font-weight: 700;
   cursor: pointer;
 }
-
 .support-section i {
   color: red;
   font-size: 20px;
 }
-
 .nav {
   width: 100%;
   z-index: 5;
   border: 1px solid;
 }
-
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -49,11 +42,9 @@ a {
   padding: 20px 50px;
   box-shadow: 0 0 20px black;
 }
-
 #brand-logo img {
   height: 45px;
 }
-
 .nav-toggler {
   border: none;
   outline: none;
@@ -62,11 +53,9 @@ a {
   background-color: inherit;
   transition: var(--btn-sole-transition);
 }
-
 .nav-toggler:hover {
   transform: rotate(450deg);
 }
-
 .menu-nav {
   padding: 0 50px;
   font-weight: 600;
@@ -74,38 +63,32 @@ a {
   overflow: hidden;
   transition: var(--btn-sole-transition);
 }
-
 .menu-nav__list {
   padding: 0 0 20px 0;
   margin-bottom: 20px;
   list-style-type: none;
   border-bottom: 2px solid #ddd;
 }
-
 .menu-nav__link {
   display: block;
   padding: 20px 0;
 }
-
 .menu-btn__sign {
   border: 1px solid var(--red-bg-color);
   padding: 10px 30px;
   border-radius: 2%;
   transition: var(--btn-sole-transition);
 }
-
 .menu-btn .menu-btn__sign:nth-of-type(2) {
   margin-left: 5px;
   background-color: var(--red-bg-color);
   color: white;
 }
-
 .menu-btn .menu-btn__sign:first-of-type:hover,
 .menu-btn .menu-btn__sign:nth-of-type(2):hover {
   background-color: #333;
   color: white;
 }
-
 .bg-signin{
   background-color:rgb(225, 228, 228);
 }
@@ -137,12 +120,9 @@ a {
   color: black;
   font-size: 18px;
 }
-
 input[type=text],input[type=password],input[type=email]{
-
     border: none;
-    background:rgb(238, 235, 235);
-   
+    background:rgb(238, 235, 235); 
 }
 .sign-up{
   color: black;
@@ -150,7 +130,6 @@ input[type=text],input[type=password],input[type=email]{
 .signup-link a{
   text-decoration: none;
 }
-
 .bg-body{
   background-color:  rgb(228,248,245)
   
