@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h2><u>ADD RECEIPT</u></h2>
+            <p>Dear esteemed customer, please fill this form to add transaction...</p>
+        </div>
+        <form action="transaction.php" method="POST">
+            <fieldset>
+                <legend>Add Transaction</legend>
+                <label for="ttype">Transaction Type:</label><br>
+                    <select name="ttype">
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                    </select><br><br>
+                <label for="tdate">Date of Transaction:</label><br>
+                <input type="date" name="tdate"><br><br>
+                <label for="descr">Description:</label><br>
+                <textarea name="descr"></textarea><br><br>
+                <label for="tamount">Amount:</label><br>
+                <input type="number" name="tamount"><br><br>
+                <input type="submit" value="Add"><br><br>
+            </fieldset>
+        </form>
+    </section><br><br>
+</body>
+</html>
