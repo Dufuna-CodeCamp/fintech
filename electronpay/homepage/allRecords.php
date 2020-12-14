@@ -12,17 +12,26 @@ try {
     if ($result->rowCount() > 0) {
         echo "<table style= 'border: 1px solid black'>";
         echo "<tr>";
+            echo "<th style= 'border: 1px solid black'>Business Name</th>";
+            echo "<th style= 'border: 1px solid black'>Client Name</th>";
+            echo "<th style= 'border: 1px solid black'>Txn Date</th>";
+            echo "<th style= 'border: 1px solid black'>Address</th>";
+            echo "<th style= 'border: 1px solid black'>Phone Number</th>";
+            echo "<th style= 'border: 1px solid black'>Email</th>";
             echo "<th style= 'border: 1px solid black'>Txn Type</th>";
-            echo "<th style= 'border: 1px solid black'>Description</th>";
-            echo "<th style= 'border: 1px solid black'>Txn Amount</th>";
-            echo "<th style= 'border: 1px solid black'>Tnx Date</th>";
+            echo "<th style= 'border: 1px solid black'>Total Sum</th>";
         echo "</tr>";
+
         while ($row = $result->fetch()) {
             echo "<tr>";
-                echo "<td style= 'border: 1px solid black'>" . $row['txn_type'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . $row['descr'] . "</td>";
-                echo "<td style= 'border: 1px solid black'>" . $row['txn_amount'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['businessname'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['clientname'] . "</td>";
                 echo "<td style= 'border: 1px solid black'>" . $row['txn_date'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['addr'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['phone'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['email'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['ttype'] . "</td>";
+                echo "<td style= 'border: 1px solid black'>" . $row['itotal'] . "</td>";
             echo "<tr>";
         }
         echo "</table";

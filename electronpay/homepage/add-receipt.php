@@ -1,8 +1,7 @@
 <?php
 include_once 'connect.php';
 session_start();
-$user_identity = 2;
-//$_SESSION['sess_id'];
+$user_identity = $_SESSION['sess_id'];
 
 #Create Table
 try {
@@ -22,11 +21,11 @@ try {
         iname varchar(50),
         iprice decimal(10, 2),
         iqty decimal(5, 2),
-        itotal decimal(10, 2),
+        itotal varchar(20),
         jname varchar(50),
         jprice decimal(10, 2),
         jqty decimal(5, 2),
-        jtotal decimal(10, 2),
+        jtotal varchar(20),
         primary key(id),
         foreign key(user_idd) references users(id)
         )";

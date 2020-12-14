@@ -30,9 +30,11 @@ function validateField(inputField, regEx, message1, message2) {
  
   if(inputFieldValue === ""){
       setCheckFailAction(inputField, message1);
+       e.preventDefault();
   } 
   else if (!inputFieldValue.match(regEx)){
       setCheckFailAction(inputField, message2);
+       e.preventDefault();
   } 
   else {
       setCheckPassAction(inputField, "");
@@ -54,7 +56,6 @@ function setCheckPassAction(inputField, message){
 }
 
 formField.addEventListener("submit", e => {
-  e.preventDefault();
   validateField(emailField, emailRegEx, "* Email cannot be blank", "* Email is invalid");
   validateField(passwordField, passwordRegEx, "* Password cannot be blank", "* Password cannnot contain blah blah blah");
 })
