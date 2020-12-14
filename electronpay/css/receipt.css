@@ -1,38 +1,30 @@
-
 .container{
     display: flex;
 }
-
 #receipt-table{
     width: 70%;
 }
-
 #receipt-table {
     border-collapse: collapse;
     padding-top: 70%;
     padding-bottom: 70%;
 }
-
 .receipts{
     padding-top: 70px;
     padding-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
 }
-  
 #receipt-table td, #receipt-table th {
     border: 1px solid #ddd;
     padding: 14px;
 }
-
 #receipt-table tr:nth-child(even){
     background-color: #f2f2f2;
 }
-
 #receipt-table tr:hover {
     background-color: #ddd; cursor:pointer
 }
-
 #receipt-table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -40,19 +32,16 @@
     background-color: #960000;
     color: white;
 }
-
 .receipt-details, .add-receipt{
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
 }
-
 #receipt-table{
     table-layout: auto;
     width: 100%;
 }
-
 .modal {
     display: none; 
     position: fixed; 
@@ -65,35 +54,30 @@
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
-  }
-  
-  .modal-content {
+}
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-  }
-  
+}
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 .back-btn{
     width: 30%;
     float: right;
 }
-
 .search-box{
     width: 70%;
     display: block;
@@ -102,11 +86,9 @@
     background-color:  white;
     color: black;
 }
-
 input::placeholder{
     color: #353333;
 }
-
 #filter {
     background-image: url('./images-logo/searchicon.png');
     background-position: 10px 10px;
@@ -116,11 +98,9 @@ input::placeholder{
     border: 1px solid black;
     margin-bottom: 12px;
 }
-
 .new-receipt{
     margin-bottom: 50px;
 }
-
 .add-receipt input[type=text], 
 .add-receipt input[type=email],
 .add-receipt input[type=date],
@@ -132,8 +112,7 @@ input::placeholder{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
+}
 .add-receipt input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -144,36 +123,29 @@ input::placeholder{
     border-radius: 4px;
     cursor: pointer;
 }
-  
 .add-receipt input[type=submit]:hover {
     background-color: #45a049;
 }
-  
 div.add-receipt{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
-
 div.add-new{
     width: 50%;
 }
-
 .add-new h2{
     color: #b50000;
 }
-
 .catchphrase-btn.submit{
     border-radius:13px;
     cursor: pointer;
 }
-
 @media only screen and (max-width : 1440px){
     .menu-nav {
         overflow: revert;
     }
 }
-
 @media only screen and (max-width: 1024px) {
     #receipt-table{
         width: 100%;
@@ -181,32 +153,26 @@ div.add-new{
         margin-left: auto;
         margin-right: auto;
     }
-    
     .receipt-details .row h2, 
     .receipt-details .row h3, 
     .receipt-details table{
         margin-left: 25px;
         margin-right: 25px;
     }
-
     .new-receipt {
         margin-bottom: 35px;
         margin-left: 30px;
     }
-
     .container{
         display: block;
     }
-
     div.add-new {
         width: 70%;
     }
-
     .menu-nav{
         overflow: hidden;
     }
 }
-
 @media only screen and (max-width: 768px)  {
     #receipt-table{
         width: 90%;
@@ -214,20 +180,16 @@ div.add-new{
         margin-left: auto;
         margin-right: auto;
     }
-
     .container{
         display: block;
     }
-
     .menu-nav.other-menu {
         width: 100%;
     }
-
     .new-receipt {
         margin-bottom: 35px;
         margin-left: 30px;
     }
-
     .catchphrase-btn{
         padding: 10px 22px;
     }
@@ -239,28 +201,23 @@ div.add-new{
     .receipt-list tr {
         display: block;
     }
-
     .receipt-list thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
-
     .receipt-list tr {
       margin: 0 0 1rem 0;
-    }
-      
+    }    
     .receipt-list tr:nth-child(odd) {
       background: #ccc;
-    }
-    
+    }   
     .receipt-list td {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
         padding-left: 50%;
     }
-
     .receipt-list td:before {
         position: absolute;
         top: 0;
@@ -269,15 +226,12 @@ div.add-new{
         padding-right: 10px;
         white-space: nowrap;
     }
-
     div.add-new {
         width: 93%;
     }
-
     div.catchphrase-btn.back-btn{
         float: inherit;
     }
-
     .receipt-list td:nth-of-type(1):before { content: "Business Name"; }
     .receipt-list td:nth-of-type(2):before { content: "Purchase Date"; }
     .receipt-list td:nth-of-type(3):before { content: "Phone Number"; }
@@ -286,12 +240,10 @@ div.add-new{
     .receipt-list td:nth-of-type(6):before { content: "Due Date"; }
     .receipt-list td:nth-of-type(7):before { content: "Total Amount"; }
 }
-
 @media only screen and (max-width: 540px)  {
     input#filter{
         font-size: small;
     }
-
     .receipt-details .row h2, .receipt-details .row h3{
         margin-left: 25px;
         margin-right: 25px;
