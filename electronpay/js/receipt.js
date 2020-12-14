@@ -1,21 +1,4 @@
 
-// Delete Modal
-var modal = document.getElementById("deleteModal");
-var delete_btns = document.getElementsByClassName("deleteButton");
-var btn = delete_btns[0];
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-}
-
 //Receipts Filter
 function searchReceipts() {
   var input, filter, table, tr, td, i, j;
@@ -69,3 +52,15 @@ function addRow() {
   cell3.innerHTML = '<td><input style="width: 100%;" type="number" name="jqty"></td>';
   cell4.innerHTML = '<td><input style="width: 100%;" type="number" name="itotal" class="subtotal"></td>';
 }
+
+//DELETES A RECEIPT FROM TABLE/LIST OF RECEIPTS ON CLICK OF DELETE BUTTON
+const row = document.querySelectorAll("tbody tr");
+row.forEach(rowItem => {
+    const deleteRowBtn = rowItem.querySelector(".deleteButton");
+    deleteRowBtn.addEventListener("click", () => {
+      const shouldDelete = prompt("Are you sure you want to delete this item? type 'YES' to delete");
+      if (shouldDelete === "yes" || shouldDelete === "YES" || shouldDelete === "Yes"){
+        rowItem.remove();
+      }
+    })
+})
