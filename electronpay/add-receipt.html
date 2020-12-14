@@ -51,30 +51,33 @@
                         <option value="invoice">Invoice</option>
                     </select>
                     <label for="type">Add Items</label>
-                    <table id="receipt-table" class="add-receipt-items">
-                        <thead>
-                            <tr>
-                                <th>Item Name</th>
-                                <th>Unit Price</th>
-                                <th>Qty</th>
-                                <th>Sub Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="text" name="iname"></td>
-                                <td><input style="width: 100%;" type="number" name="iprice" onkeyup="Multiply()"></td>
-                                <td><input style="width: 100%;" type="number" name="iqty" onkeyup="Multiply()"></td>
-                                <td><input style="width: 100%;" type="number" name="itotal" class="subtotal"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="jname"></td>
-                                <td><input style="width: 100%;" type="number" name="jprice"></td>
-                                <td><input style="width: 100%;" type="number" name="jqty"></td>
-                                <td><input style="width: 100%;" type="number" name="jtotal" class="subtotal"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="add-receiptt">
+                        <table id="receipt-table" class="add-receipt-items">
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Unit Price</th>
+                                    <th>Qty</th>
+                                    <th>Sub Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="iname"></td>
+                                    <td><input style="width: 100%;" type="number" name="iprice" onkeyup="Multiply()"></td>
+                                    <td><input style="width: 100%;" type="number" name="iqty" onkeyup="Multiply()"></td>
+                                    <td><input style="width: 100%;" type="number" name="itotal" class="subtotal"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="jname"></td>
+                                    <td><input style="width: 100%;" type="number" name="jprice"></td>
+                                    <td><input style="width: 100%;" type="number" name="jqty"></td>
+                                    <td><input style="width: 100%;" type="number" name="jtotal" class="subtotal"></td>
+                                </tr>
+                            </tbody> 
+                        </table>                              
+                        <a  onclick="addRow()">Add New Item</a>
+                    </div>
                     <button type="submit" class="catchphrase-btn submit">Submit</button>
                 </form> 
             </div>       

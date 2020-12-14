@@ -50,7 +50,7 @@ a {
     font-size: 20px;
     padding: 0;
     background-color: inherit;
-    transition: var(--btn-sole-transition);
+    cursor: pointer;
 }
 .nav-toggler:hover {
     transform: rotate(450deg);
