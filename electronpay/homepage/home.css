@@ -151,6 +151,7 @@ header {
     border: 1px solid;
     margin-top: 20px;
     padding: 10px 50px;
+    outline: none;
     text-align: center;
     background-color: rgba(255, 196, 0, 0.659);
     position: relative;
@@ -198,7 +199,7 @@ header {
 
 .plan-template {
     border: 1px solid;
-    height: max-content;
+    height: max-content !important;
     box-shadow: 0 0 5px black;
     position: relative;
 }
@@ -254,7 +255,7 @@ header {
     }
 }
 
-.register-account {
+.login-account {
     padding: 50px;
     background: linear-gradient(to bottom, red, darkred, rgb(49, 1, 16))
 }
@@ -264,35 +265,51 @@ header {
     margin: 0 auto;
 }
 
-.register-account h2 {
+.login-account h2 {
     margin-bottom: 25px;
     color: white;
 }
 
-.register-form {
+.login-form {
     display: grid;
     grid-gap: 15px
 }
 
-.register-account input {
+.login-account input {
     padding: 15px;
     outline: none;
     font-style: italic;
 }
 
-.register-account .catchphrase-btn {
-    margin-top: 0;
+.alert-text {
+    font-size: 8px;
+    text-transform: lowercase;
+    font-style: italic;
+    height: 3px;
 }
 
-.register-account p {
+.login-account .catchphrase-btn {
+    margin-top: 10px;
+}
+
+.login-account p {
     color: white;
     margin-top: 20px;
 }
 
-.register-account p a {
+.login-account p a {
     text-decoration: underline;
     color: var(--btn-big-bg-color);
 }
+
+.input-pass-indicator {
+    border: 2px solid green;
+}
+
+.input-fail-indicator {
+    border: 2px solid orange;
+}
+
 .footer {
     text-align: center;
     padding: 20px;

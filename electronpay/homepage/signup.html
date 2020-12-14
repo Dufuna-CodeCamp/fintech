@@ -7,11 +7,11 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="./home.css">
 <link rel="stylesheet" href="styles.css">
 
-<title>Fintech</title>
 <link rel="icon" href="./assets/network.png"/>
-
+<title>electronpay.com</title>
 
 </head>
 <body>
@@ -21,23 +21,24 @@
 
 <nav class="nav">
     <div class="nav-header">
-        <a href="#home" id="brand-logo"><img src="images-logo/electronpay-logo.png" alt="electronpay.com"></a>
+        <a href="./home.html" id="brand-logo"><img src="images-logo/electronpay-logo.png" alt="electronpay.com"></a>
         <button class="nav-toggler"><i class="fas fa-bars"></i></button>
     </div>
 
     <div class="menu-nav">
         <ul class="menu-nav__list">
-            <li class="menu-nav__item"><a href="#services" class="menu-nav__link"> How It Works </a></li>
-            <li class="menu-nav__item"><a href="#plans-pricing" class="menu-nav__link"> Plans & Pricing </a></li>
-            <li class="menu-nav__item"><a href="" class="menu-nav__link"> More </a></li>
+            <li class="menu-nav__item"><a href="./home.html#services" class="menu-nav__link"> How It Works </a></li>
+            <li class="menu-nav__item"><a href="./home.html#plans-pricing" class="menu-nav__link"> Plans & Pricing </a></li>
+            <li class="menu-nav__item"><a href="#" class="menu-nav__link"> More </a></li>
         </ul>
 
         <div class="menu-btn">
-            <a href="" type="button" class="menu-btn__sign"> Sign in </a>
-            <a href="#signup" type="button" class="menu-btn__sign"> Sign up </a>
+            <a href="./home.html#signin" type="button" class="menu-btn__sign"> Sign in </a>
+            <a href="#" type="button" class="menu-btn__sign"> Sign up </a>
         </div>
     </div>
 </nav>
+
 <div class="bg-signin">
 <div class="container">
 <div class="row">
@@ -52,23 +53,13 @@
         <div class="form-group pr-5 pl-5">
           <div class="input-group-prepend">
             <div class="input-group-text row pt-0  form1" id="inputGroup-sizing-sm">
-             <label for="exampleInputEmail1" class="col-12 col-md-12 text-left pl-0 pt-1">First Name<span style="color: red;">*</span></label>
-                <input type="text" class="form-control col-12 col-md-12" id="firstName"  placeholder="First Name">
+             <label for="exampleInputEmail1" class="col-12 col-md-12 text-left pl-0 pt-1">Full-Name<span style="color: red;">*</span></label>
+                <input type="text" class="form-control col-12 col-md-12" id="fullName"  placeholder="Full-Name">
                 <p class="error-block ml-5" style="font-size: 12px; color:red;"></p>
           </div>
         </div>
         </div>
         
-        <br>
-        <div class="form-group pr-5 pl-5">
-          <div class="input-group-prepend">
-            <div class="input-group-text row pt-0  form1" id="inputGroup-sizing-sm">
-             <label for="exampleInputEmail1" class="col-12 col-md-12 text-left pl-0 pt-1">Last Name<span style="color: red;">*</span></label>
-                <input type="text" class="form-control col-12 col-md-12" id="lastName"  placeholder="Last Name">
-                <p class="error-block ml-5" style="font-size: 12px; color:red;"></p>
-          </div>
-        </div>
-        </div>
         <br>
           <div class="form-group pr-5 pl-5">
           <div class="input-group-prepend">
@@ -147,10 +138,29 @@
 
 </div>
 
+<header>
+  <div class="catchphrases">
+      <div class="brand-logo-rotate">
+          <img src="./images-logo/electronpay-logo-detached-2.png" alt="" height="150px">
+          <h5>ELECTRONPAY RECEIPTS</h5>
+      </div>         
+      <h2>Never loose details of your transactions. Import/include receipts with ease. Anyday, anytime, anywhere. </h2>
+      <p>Its the computer age. Do away with manual tracking of expense(s) powered by our electronpay receipts web and mobile technologies</p>
+  </div>
+</header>
+
+<footer class="footer">
+  <a href="#home" id="brand-logo"><img src="images-logo/electronpay-logo.png" alt="electronpay.com"></a>
+  <div> Copyright &copy; electronpay.com <span id="year"></span><br>
+      All rights reserved
+  </div>
+</footer>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
 <script src="./DOM/signup.js"></script>
-<script  src="../homepage/home.js"></script>
+<script type="text/javascript" src="./home.js"></script>
 </body>
 </html>
