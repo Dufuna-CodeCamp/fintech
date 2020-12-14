@@ -15,7 +15,6 @@ year.innerHTML = new Date().getFullYear();
 navToggleBtn.addEventListener("click", function(){
     const listContainerHeight = listContainer.getBoundingClientRect().height;
     const navListHeight = navList.getBoundingClientRect().height +70;
-    console.log(listContainerHeight);
     if(listContainerHeight <= 40){
         listContainer.style.height = `${navListHeight}px`;
     } else {
