@@ -18,7 +18,8 @@
     <div class="container">
         <div class="menu-nav other-menu">
             <ul class="menu-nav__list">
-                <li class="menu-nav__item"><a href="./receipts-list.html" class="menu-nav__link"> My receipts </a></li>
+                <li class="menu-nav__item"><a href="./receipts-list.html" class="menu-nav__link"> My Receipts & Invoices </a></li>
+                <li class="menu-nav__item"><a href="./add-receipt.html" class="menu-nav__link"> Add Receipt/Invoice </a></li>
                 <li class="menu-nav__item"><a href="" class="menu-nav__link"> Services </a></li>
                 <li class="menu-nav__item"><a href="#plans-pricing" class="menu-nav__link"> Plans & Pricing </a></li>
                 <li class="menu-nav__item"><a href="" class="menu-nav__link"> More </a></li>
@@ -35,7 +36,7 @@
                 <input type="text" class="search-box" name="serach-text" id="filter" onkeyup="searchReceipts()" placeholder="Type to Search for a receipt"/>                  
                 <br/>
                 <div id="receipts-list">
-                    <table id="receipt-table">
+                    <table id="receipt-table" class="receipt-list">
                         <thead>
                             <tr>
                                 <th>Business Name</th>
@@ -104,9 +105,14 @@
            
             <h2>Never loose details of your transactions. Import/include receipts with ease. Anyday, anytime, anywhere. </h2>
             <p>Its the computer age. Do away with manual tracking of expense(s) powered by our electronpay receipts web and mobile technologies</p>
-            <a href="" type="button" class="catchphrase-btn"> Register your free account </a>
         </div>
     </header>
+    <footer class="footer">
+        <a href="#home" id="brand-logo"><img src="images-logo/electronpay-logo.png" alt="electronpay.com"></a>
+        <div> Copyright &copy; electronpay.com <span id="year"></span><br>
+            All rights reserved
+        </div>
+    </footer>
     <script type="text/javascript" src="./home.js"></script>
 </body>
 </html>
