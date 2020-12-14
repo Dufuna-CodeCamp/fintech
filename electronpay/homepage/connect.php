@@ -1,7 +1,7 @@
 <?php
 #SetUp Connection
-$usernameDB = "";//insert your database username
-$passwordDB = "";//insert your database password
+$usernameDB = "emancipator";//insert your database username
+$passwordDB = "emma21995";//insert your database password
 
 try {
     $pdo = new PDO("mysql:host=localhost", $usernameDB, $passwordDB);

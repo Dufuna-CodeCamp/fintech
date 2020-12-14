@@ -31,21 +31,21 @@
         <div class="receipt-details add-new">
             <h2>Add a New Receipt Or Invoice Here</h2>
             <div class="add-receipt">
-                <form action="#" method="POST" enctype="multipart/form-data">
+                <form action="add-receipt.php" method="POST">
                     <label for="businessname">Business Name</label> <br>
                     <input type="text" name="businessname" id="businessname" /><br>
                     <label for="clientname">Client/Seller Name</label> <br>
                     <input type="text" name="clientname" id="clientname" /><br>
-                    <label for="date">Purchase Date</label> <br>
-                    <input type="text" name="date" id="date" /><br>
-                    <label for="address">Address</label> <br>
-                    <input type="text" name="address" id="address" /><br>
+                    <label for="txn_date">Purchase Date</label> <br>
+                    <input type="date" name="txn_date" id="date" /><br><br>
+                    <label for="addr">Address</label> <br>
+                    <input type="text" name="addr" id="addr" /><br>
                     <label for="phone">Phone Number</label> <br>
                     <input type="text" name="phone" id="phone" /><br>
                     <label for="email">Email Address</label> <br>
                     <input type="email" name="email" id="email" /><br>
-                    <label for="type">Type</label>
-                    <select id="type" name="type">
+                    <label for="ttype">Type</label>
+                    <select id="ttype" name="ttype">
                         <option value="receipt">Receipt</option>
                         <option value="invoice">Invoice</option>
                     </select>
@@ -61,16 +61,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><input type="text"></td>
-                                <td><input type="text" onkeyup="Multiply()"></td>
-                                <td><input type="text" onkeyup="Multiply()"></td>
-                                <td><input type="text" class="subtotal"></td>
+                                <td><input type="text" name="iname"></td>
+                                <td><input style="width: 100%;" type="number" name="iprice" onkeyup="Multiply()"></td>
+                                <td><input style="width: 100%;" type="number" name="iqty" onkeyup="Multiply()"></td>
+                                <td><input style="width: 100%;" type="number" name="itotal" class="subtotal"></td>
                             </tr>
                             <tr>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="text" class="subtotal"></td>
+                                <td><input type="text" name="jname"></td>
+                                <td><input style="width: 100%;" type="number" name="jprice"></td>
+                                <td><input style="width: 100%;" type="number" name="jqty"></td>
+                                <td><input style="width: 100%;" type="number" name="jtotal" class="subtotal"></td>
                             </tr>
                         </tbody>
                     </table>
