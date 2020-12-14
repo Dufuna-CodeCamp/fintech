@@ -1,6 +1,6 @@
 <?php
 #SetUp Connection
-$usernameDB = ""//insert your database username
+$usernameDB = "";//insert your database username
 $passwordDB = "";//insert your database password
 
 try {
